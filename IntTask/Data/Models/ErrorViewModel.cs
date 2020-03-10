@@ -1,6 +1,6 @@
 using System;
 
-namespace IntTask.Models
+namespace IntTask.Data.Models
 {
     public class ErrorViewModel
     {
