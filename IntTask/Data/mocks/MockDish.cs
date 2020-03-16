@@ -15,7 +15,8 @@ namespace IntTask.Data.mocks
             {
                 return new List<Dish>
                 {
-                    new Dish { title = "carbonara",
+                    new Dish { 
+                        title = "carbonara",
                         price = 300,
                         contains = {"pasta", "eggs", "bacon", "cheese"},
                         calories = 400,
@@ -24,7 +25,8 @@ namespace IntTask.Data.mocks
                         weight = 300
                     },
 
-                     new Dish { title = "bolognese",
+                     new Dish { 
+                        title = "bolognese",
                         price = 250,
                         contains = {"pasta", "tomato sauce", "grounded beef", "cheese"},
                         calories = 400,

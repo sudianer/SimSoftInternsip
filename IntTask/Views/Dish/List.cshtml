@@ -1,0 +1,29 @@
+﻿@using IntTask.ViewModels
+@model DishListViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+</head>
+<body>
+    <h1>Bla Bla restoraunt</h1>
+    <h2>Блюда</h2>
+    <h3>@Model.currMenu</h3>
+    @{
+        foreach (var dish in Model.getAllDishes)
+        {
+            <div>
+                <h2>Блюдо: @dish.title</h2>
+                <p>Цена: @dish.price.ToString("c")</p>
+            </div>
+        }
+
+    }
+</body>
+</html>
