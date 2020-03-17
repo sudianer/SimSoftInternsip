@@ -7,15 +7,15 @@ namespace IntTask.Data.Models
 {
     public class Dish
     {
-        public int id { get; set; }
-        public string creationDate { get; }
-        public string title { get; set; }
-        public List<string> contains { get; set; }
-        public string description { get; set; }
-        public double price { get; set; }
-        public int weight { get; set; }
-        public int calories { get; set; }
-        public int timeToMake { get; set; }
+        public int Id { get; set; }
+        public string CreationDate { get; }
+        public string Title { get; set; }
+        public List<string> Ingredients { get; set; }
+        public string Description { get; set; }
+        public double Price { get; set; }
+        public int Weight { get; set; }
+        public int Calories { get; set; }
+        public int TimeToMake { get; set; }
 
     }
 }

@@ -10,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using IntTask.Data.Interfaces;
-using IntTask.Data.mocks;
+using IntTask.Data.Mocks;
 
 namespace IntTask
 {

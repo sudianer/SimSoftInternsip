@@ -12,17 +12,19 @@ namespace IntTask.Controllers
     {
         private readonly IDish _dish;
 
-        public DishController(IDish iDish)
+        public DishController(IDish dish)
         {
-            _dish = iDish;
+            _dish = dish;
         }
         
         public ViewResult List()
         {
-            DishListViewModel dvm = new DishListViewModel();
-            dvm.getAllDishes = _dish.Dishes;
-            dvm.currMenu = "Основное меню";
-            return View(dvm);
+            DishListViewModel dvm = new DishListViewModel
+            {
+                AllDishes = _dish.Dishes,
+                CurrentMenu = "Основное меню"
+            };
+            return View(dvm.AllDishes);
         }
     }
 }

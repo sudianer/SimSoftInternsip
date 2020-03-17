@@ -14,13 +14,13 @@
 <body>
     <h1>Bla Bla restoraunt</h1>
     <h2>Блюда</h2>
-    <h3>@Model.currMenu</h3>
+    <h3>@Model.CurrentMenu</h3>
     @{
-        foreach (var dish in Model.getAllDishes)
+        foreach (var dish in Model.AllDishes)
         {
             <div>
-                <h2>Блюдо: @dish.title</h2>
-                <p>Цена: @dish.price.ToString("c")</p>
+                <h2>Блюдо: @dish.Title</h2>
+                <p>Цена: @dish.Price.ToString("c")</p>
             </div>
         }
 

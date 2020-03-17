@@ -8,9 +8,9 @@ namespace IntTask.ViewModels
 {
     public class DishListViewModel
     {
-        public IEnumerable<Dish> getAllDishes { get; set; }
+        public IEnumerable<Dish> AllDishes { get; set; }
 
-        public string currMenu { get; set; }
+        public string CurrentMenu { get; set; }
 
     }
 }

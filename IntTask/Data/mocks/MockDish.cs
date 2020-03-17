@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using IntTask.Data.Interfaces;
 using IntTask.Data.Models;
 
-namespace IntTask.Data.mocks
+namespace IntTask.Data.Mocks
 {
     public class MockDish : IDish
     {
@@ -16,23 +16,23 @@ namespace IntTask.Data.mocks
                 return new List<Dish>
                 {
                     new Dish { 
-                        title = "carbonara",
-                        price = 300,
-                        contains = {"pasta", "eggs", "bacon", "cheese"},
-                        calories = 400,
-                        description="most popular pasta in our menu",
-                        timeToMake = 10,
-                        weight = 300
+                        Title = "carbonara",
+                        Price = 300,
+                        Ingredients = {"pasta", "eggs", "bacon", "cheese"},
+                        Calories = 400,
+                        Description="most popular pasta in our menu",
+                        TimeToMake = 10,
+                        Weight = 300
                     },
 
                      new Dish { 
-                        title = "bolognese",
-                        price = 250,
-                        contains = {"pasta", "tomato sauce", "grounded beef", "cheese"},
-                        calories = 400,
-                        description="famous italian pasta",
-                        timeToMake = 10,
-                        weight = 350
+                        Title = "bolognese",
+                        Price = 250,
+                        Ingredients = {"pasta", "tomato sauce", "grounded beef", "cheese"},
+                        Calories = 400,
+                        Description="famous italian pasta",
+                        TimeToMake = 10,
+                        Weight = 350
                     }
                 };
             }
